@@ -1,0 +1,121 @@
+:root{
+    /*set your starting image here*/
+    --image: url("https://i.postimg.cc/8cdJKp1h/IMG-8042.jpg");
+    --color: #f2a65e;
+    --color2:#c128cc;
+  }
+  
+  body {
+    background: url("https://i.pinimg.com/originals/81/34/08/81340844a99a35cc7993166cbd9b5866.gif");
+    text-align: center;
+  }
+  header {
+    text-align: center;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px 30px 30px 30px;
+    animation: 1s ease-out 0s 1 buttonPop;
+    background: var(--color);
+    padding: 5px 5px 72px;
+    position: relative;
+    line-height: 0.75;
+    border-radius: 59px;
+    box-shadow:  10px 10px 20px #66460e,
+    -10px -10px 20px #ffff3a;
+  }
+  .container{
+    height: 60vh;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+  }
+  
+  @keyframes buttonPop {
+    0% {
+      transform: scale(1.0);
+    }
+    50% {
+      transform: scale(2.0);
+    }
+    100% {
+      transform: scale(1.0);
+    }
+  }
+  #hpbd {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5vw;
+    margin: 0.75em 0.75em 0.75em 0.75em;
+  }
+  
+  #background {
+    background-image: var(--image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:65vh;
+    width: 90vw;
+    z-index: -2;
+    position: absolute;
+    object-fit: contain;
+    margin-top: 0;
+    margin: 3vh 0vw 0vh 3.25vw;
+    border-radius: 59px;
+    box-shadow:  10px 10px 20px #4d1052,
+            -10px -10px 20px #ff40ff;
+  }
+  #button {
+    height: 10vh;
+    width: 30vw;
+    position: relative;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 0px 5px 10px;
+    animation: rainbow 1s infinite;
+    top: 0;
+    margin: 0 10px;
+    display: inline-block;
+    z-index: 2;
+  } 
+  
+  
+  #buttontext{
+    font-family: 'Fredoka One', cursive;
+    font-size: 2vw; 
+    vertical-align: center;
+    position: static;
+  }
+  
+  @keyframes rainbow {
+    0%{
+      background: radial-gradient(white,#f571bc);
+    } 25% {
+      background: radial-gradient(white,#af64fa);
+    } 50% {
+      background: radial-gradient(white,#8064fa);
+    } 75% {
+      background: radial-gradient(white,#648efa);
+    } 100% {
+      background: radial-gradient(white,#f571bc);
+    }
+  }
+  
+  .button { transition: all .5s ease-in-out; }
+  .button:hover { transform: scale(1.5); }
+  
+  /*This is the music iFrame*/
+  iframe {
+    height: 0;
+    width: 0;
+    display: none;
+  }
+  
+  .redirect{
+    animation: rainbow 1s infinite;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 12px;
+    text-decoration: none;
+  }
